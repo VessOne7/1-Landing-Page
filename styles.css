@@ -11,9 +11,8 @@ body{
     margin: 0;
 }
 
-.header, .information, .quote, .signup, .footer{
+.header, .inf, .quote, .signup, .footer{
     flex: 1;
-
 }
 
 .wtf{
@@ -30,19 +29,25 @@ body{
 
 .desc{
     display: flex;
-    justify-content: stretch;
+    justify-content: space-between;
     width: 1000px;
+    gap: 50px;
+    margin: 90px 0;
 }
 
 .hero{
     width: 50%;
 }
 
-.desc > img{
+.img{
   max-width: 500px;
   max-height: 188px;
   width: 500px;
   height: 188px;
+  background-color: rgb(118, 120, 129);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo{
@@ -50,10 +55,40 @@ body{
     color: #F9FAF8;
 }
 
+.inf{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.pictures{
+    display: flex;
+    flex: 1;
+}
+
+.pic{
+    margin: 20px;
+}
+
+.pic_text{
+    text-align: center;
+    margin-top: 6px;
+    color: rgb(92, 92, 92);
+}
+
+.pic_box{
+    border: solid #3882F6;
+    padding: 80px;
+    border-radius: 12px;
+}
 
 button{
     background-color: #3882F6;
+    margin-top: 8px;
+    border-radius: 12px;
+    padding: 6px;
+    width: 150px;
 }
 
 .header, .footer{
@@ -68,9 +103,10 @@ button{
     font-size: 48px;
     font-weight: bolder;
     color: #F9FAF8;
+    margin: 0;
 }
 
-.Hero_sub, .links, button, .footer{
+.Hero_sub, .links, button, .footer, .img{
     font-size: 18px;
     color: #E5E7EB
 }
