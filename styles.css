@@ -1,22 +1,48 @@
+html{
+    height: 100vh;
+}
+
 body{
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    margin: 0;
+    align-items: center;
     padding: 0;
+    margin: 0;
 }
 
 .header, .information, .quote, .signup, .footer{
-    padding: 1% 15%; 
-    display:flex;
+    flex: 1;
+
 }
 
-.header{
-    flex-direction: column;   
+.wtf{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 100px;
 }
 
 .top{
     display: flex;
     justify-content: space-between;
+    width: 1000px;
+}
+
+.desc{
+    display: flex;
+    justify-content: stretch;
+    width: 1000px;
+}
+
+.hero{
+    width: 50%;
+}
+
+.desc > img{
+  max-width: 500px;
+  max-height: 188px;
+  width: 500px;
+  height: 188px;
 }
 
 .logo{
@@ -24,16 +50,7 @@ body{
     color: #F9FAF8;
 }
 
-.footer{
-    justify-content: center;
-    align-items: center;
-    min-height: 42px;
-}
 
-img{
-    max-width: 50px;
-    max-height: 50px;
-}
 
 button{
     background-color: #3882F6;
@@ -41,6 +58,10 @@ button{
 
 .header, .footer{
     background-color: #1F2937;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .Hero{
@@ -52,10 +73,6 @@ button{
 .Hero_sub, .links, button, .footer{
     font-size: 18px;
     color: #E5E7EB
-}
-
-.desc{
-    display: flex;
 }
 
 .signup{
